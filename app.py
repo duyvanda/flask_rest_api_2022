@@ -96,9 +96,10 @@ class UserLogin(Resource):
 
         return {"message": "Invalid Credentials!"}, 401
 
-api.add_resource(Item, '/item/<string:name>')
-api.add_resource(ItemList, '/items')
-api.add_resource(UserLogin, '/login')
+# api.add_resource(Item, '/item/<string:name>')
+api.add_resource(ItemList, '/')
+# api.add_resource(UserLogin, '/login')
 
-if __name__ == '__main__':
-    app.run(debug=True)  # important to mention debug=True
+# if __name__ == '__main__':
+#     app.run()  
+    # important to mention debug=True
